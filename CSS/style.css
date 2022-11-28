@@ -126,6 +126,24 @@ nav{
   justify-content:space-between;
   align-items: center;
 }
+.nav-position{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 87px;
+  width: auto;
+}
+
+.nav-link::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #2196F3;
+}
 
 .header-email:hover,
 .header-email:focus {
