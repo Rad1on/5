@@ -107,6 +107,10 @@ nav a.logo{
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav a{color: var(--main-text-color)}
 .header-address a{color: var(--secondary-text-color)}
@@ -130,7 +134,7 @@ nav{
   position: relative;
   display: flex;
   align-items: center;
-  height: 87px;
+  height: 100%;
   width: auto;
 }
 
@@ -359,11 +363,17 @@ h2.team-tittle{
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover,
 .team-link:focus{
   color: #ffffff;
   background-color: #2196F3;
+
+  
 }
 .team-icon{
   width: 20px;
@@ -382,12 +392,20 @@ h2.team-tittle{
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
+
+  transition-property:border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .client-icon{
     width: 100px;
     height: 100px;
     padding-left:35px ;
     padding-right:35px ;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .client:hover,
   .client:focus{
@@ -426,6 +444,10 @@ main{
   background-color: #F5F4FA; 
   cursor: pointer;
   border:none;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .position:hover {
@@ -491,6 +513,10 @@ main{
 }
 .contact{
   margin-top: 9px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-adress:last-child{
   margin-bottom: 60px;
@@ -553,6 +579,10 @@ a.join-link{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition-property: background-color; 
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-link:hover,
 .join-link:focus{
