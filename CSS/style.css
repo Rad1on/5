@@ -107,10 +107,7 @@ nav a.logo{
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .site-nav a{color: var(--main-text-color)}
 .header-address a{color: var(--secondary-text-color)}
@@ -148,10 +145,15 @@ nav{
   border-radius: 4px;
   background-color: #2196F3;
 }
-
+.header-email{
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .header-email:hover,
 .header-email:focus {
   color:#2196f3;
+}
+.neader-number{
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-number:hover,
 .header-number:focus {
@@ -364,9 +366,7 @@ h2.team-tittle{
   height: 44px;
   border-radius: 50%;
 
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover,
 .team-link:focus{
@@ -393,9 +393,7 @@ h2.team-tittle{
   border-radius: 4px;
   fill: #AFB1B8;
 
-  transition-property:border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .client-icon{
     width: 100px;
@@ -403,9 +401,7 @@ h2.team-tittle{
     padding-left:35px ;
     padding-right:35px ;
 
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .client:hover,
   .client:focus{
@@ -445,9 +441,7 @@ main{
   cursor: pointer;
   border:none;
 
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .position:hover {
@@ -514,9 +508,7 @@ main{
 .contact{
   margin-top: 9px;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-adress:last-child{
   margin-bottom: 60px;
@@ -580,14 +572,11 @@ a.join-link{
   justify-content: center;
   align-items: center;
 
-  transition-property: background-color; 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-link:hover,
 .join-link:focus{
   background-color: #2196F3;
-  color: #ffffff;
 }
 
 .join-icon{
