@@ -141,7 +141,7 @@ nav{
   left: 0;
   content: "";
   width: 100%;
-  height: 4px;
+  height: 5px;
   border-radius: 4px;
   background-color: #2196F3;
 }
@@ -444,7 +444,8 @@ main{
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.position:hover {
+.position:hover,
+.position:focus {
   color: #ffffff;
   background-color: var(--hover-focus-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -463,7 +464,60 @@ main{
 .all {
   background-color: var(--main-background-color);
 }
-.all-one > h3 {
+.all-link{
+  position: relative;
+
+}
+.all-link:hover .all-img::before{
+  opacity: 1;
+
+}
+.all-link:focus .all-img::before {
+  opacity: 1;
+}
+.all-link:hover .all-text{
+  opacity: 1;
+}
+.all-img{
+  position: relative;
+
+}
+.all-img::before {
+  content: "";
+  position: absolute;
+
+  display: inline-block;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.all-text{
+  position: absolute;
+  top: 23px;
+  right: 64px;
+  bottom: 23;
+  left: 64px;
+
+  opacity: 0;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.all-link > h3 {
  
   font-weight: 700;
   font-size: 18px;
@@ -471,19 +525,19 @@ main{
   
   letter-spacing: 0.06em; 
 }
-.all-one > p {
+.all-link > p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
-.all-one > p{
+.all-link > p{
   margin-bottom: 20px;
 }
-.all-one > img{
+.all-link > img{
   margin-bottom: 20px;
 }
-.all-one > h3 {
+.all-link > h3 {
   margin-bottom: 4px;
 }
 
