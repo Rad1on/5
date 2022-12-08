@@ -466,34 +466,28 @@ main{
 }
 .all-link{
   position: relative;
+  
+}
+.all-link:hover .text-container{
+  transform: translateY(-100%);
+}
 
-}
-.all-link:hover .all-img::before{
-  opacity: 1;
-
-}
-.all-link:focus .all-img::before {
-  opacity: 1;
-}
-.all-link:hover .all-text{
-  opacity: 1;
-}
 .all-img{
   position: relative;
+  overflow: hidden;
 
 }
-.all-img::before {
-  content: "";
+.text-container {
   position: absolute;
+  transform: translate(-100%, -100%)
 
   display: inline-block;
+  z-index: 1;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  opacity: 0;
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .all-text{
@@ -502,8 +496,6 @@ main{
   right: 64px;
   bottom: 23;
   left: 64px;
-
-  opacity: 0;
 
   font-family: 'Roboto';
   font-style: normal;
