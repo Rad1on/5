@@ -41,12 +41,24 @@
             <h1 class="hero-tittle">
             Эффективные решения <br> для вашего бизнеса
             </h1>
-            <button type="button" class="hero-button">Заказать услугу</button> 
+            <button type="button" class="hero-button" data-modal-open>Заказать услугу</button> 
         </section>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+               
+                <button class="modal-close-button"  data-modal-close>
+                    <svg class="icon-modal-close">
+                        <use href="./images/sprite.svg#icon-modal-close"></use>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
 
         
         <section class="feature-section">
-                <h2 class="feature-tittle"></h2> <!-- Спрячем потом-->
+                <!-- <h2 class="feature-tittle"></h2> Спрячем потом -->
                     <div class="container">
                         <ul class="feature-list">
                             <li>
@@ -102,9 +114,9 @@
             <h2 class="doing-tittle">Чем мы занимаемся</h2>
             <div class="container">
             <ul class="doing-list">
-                <li> <img src="./images/index-images/1.jpg" alt="компьютер" width:="370px" height="294px" class="doing-list-item"></li>
-                <li> <img src="./images/index-images/2.jpg" alt="телефон" width:="370px" height="294px" class="doing-list-item"> </li>
-                <li> <img src="./images/index-images/3.jpg" alt="планшет" width:="370px" height="294px" class="doing-list-item"></li>
+                <li> <img src="./images/index-images/1.jpg" alt="компьютер"  class="doing-list-item"></li>
+                <li> <img src="./images/index-images/2.jpg" alt="телефон"   class="doing-list-item"> </li>
+                <li> <img src="./images/index-images/3.jpg" alt="планшет"  class="doing-list-item"></li>
             </ul>
             </div>
         </section>
@@ -142,14 +154,16 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <a href="" class="team-link">
-                                    <li>
+                                
+                                <li>
+                                    <a href="" class="team-link">
                                         <svg class="team-icon">
                                             <use href="./images/sprite.svg#icon-linkedin">
                                             </use>
                                         </svg>
-                                    </li>
-                                </a>
+                                    </a>
+                                </li>
+                                
                             </ul>
                         </li>
                         <li class="team">
@@ -181,14 +195,15 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <a href="" class="team-link">
-                                    <li>
+                                
+                                <li>
+                                    <a href="" class="team-link">
                                         <svg class="team-icon">
                                             <use href="./images/sprite.svg#icon-linkedin">
                                             </use>
                                         </svg>
-                                    </li>
-                                </a>
+                                    </a>
+                                </li>                               
                             </ul>
                         </li>
                         <li class="team">
@@ -219,15 +234,15 @@
                                             </use>
                                         </svg>
                                     </a>
-                                </li>
-                                <a href="" class="team-link">
-                                    <li>
+                                </li>                              
+                                <li>
+                                    <a href="" class="team-link">
                                         <svg class="team-icon">
                                             <use href="./images/sprite.svg#icon-linkedin">
                                             </use>
                                         </svg>
-                                    </li>
-                                </a>
+                                    </a>
+                                </li>                              
                             </ul>
                         </li>
                         <li class="team">
@@ -259,14 +274,14 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <a href="" >
-                                    <li class="team-link">
+                                <li>
+                                    <a href="" class="team-link" >
                                         <svg class="team-icon">
                                             <use href="./images/sprite.svg#icon-linkedin">
                                             </use>
                                         </svg>
-                                    </li>
-                                </a>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -372,10 +387,7 @@
                 </ul>
             </section>
         </div>
-    </footer>
-
-</div>
-    
+    </footer>    
 <script src="./js/modal.js"></script>
 </body>
 </html>
